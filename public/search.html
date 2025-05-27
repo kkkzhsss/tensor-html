@@ -8,35 +8,46 @@
 </head>
 <body>
     <nav class="navbar">
-         <div class="nav-links">
-        
+    <div class="nav-links left-links">
     </div>
-        <div class="logo">Last.fm</div>
-        <div class="nav-links">
-            <a href="search.html" class="search-icon">🔍</a> 
-            <a href="#" class="nav-link">Home</a>
-            <a href="#" class="nav-link">Live</a>
-            <a href="#" class="nav-link">Music</a>
-            <a href="#" class="nav-link">Charts</a>
-            <a href="#" class="nav-link">Events</a>
-            <a href="#" class="nav-link">Features</a>
-        </div>
-    </nav>
+    
+    <a href="index.html" class="logo">Last.fm</a>
+    
+    <div class="nav-links right-links">
+        <a href="index.htmz" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Live</a>
+        <a href="#" class="nav-link">Music</a>
+        <a href="#" class="nav-link">Charts</a>
+        <a href="#" class="nav-link">Events</a>
+        
+        <form id="searchForm" action="search.html" method="GET">
+        <input type="text" 
+         id="searchInput" 
+         name="q" 
+         placeholder="Search artists, tracks..."
+         aria-label="Search for artists, tracks or albums">
+        <button class="search-toggle-icon" type="submit" aria-label="Search">
+            <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search" width="16" height="16">
+        </button>
+</form>
+    </div>
+</nav>
     
     <div class="search-container">
         <div class="search-header">
-            <h1>Search results for "never gonna give you up"</h1>
-            <div class="search-tabs">
-                <button class="search-tab active">Top Results</button>
-                <button class="search-tab">Artists</button>
-                <button class="search-tab">Albums</button>
-                <button class="search-tab">Tracks</button>
-            </div>
+        <h1 id="search-results-title">Search results for ""</h1>
+        <div class="search-tabs">
+        </div>
         
-            <div class="new-search-container">
-                <input type="text" class="new-search-input" placeholder="Search for something else...">
-                <button class="new-search-button">🔍</button>
-            </div>
+        <div class="new-search-container">
+            <form id="searchForm" method="GET">
+                <input class="searchInput" type="text" id="searchInput" name="q" placeholder="Search artists, tracks..."aria-label="Search for artists, tracks or albums" />
+                    <button class="search-toggle-icon" type="submit" aria-label="Search">
+                        <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search" width="16" height="16">
+                    </button>
+            </form>
+        </div>
+    </div>
         <div class="main-content-wrapper">
         
         <div class="search-results">
@@ -124,14 +135,12 @@
                 </div>
             </div>
             
-            <!-- Albums Section -->
             <div class="search-section">
                 <div class="section-header">
                     <h2 class="section-title">Albums</h2>
                 </div>
                 
                 <div class="albums-grid">
-                    <!-- Album 1 -->
                     <div class="album-card">
                         <div class="album-image" style="background-color: #74b9ff;">
                             <div class="album-info">
@@ -371,5 +380,6 @@
         </div>
         </div>
     </footer>
+    <script src="js/api-search.js"></script>
 </body>
 </html>

@@ -8,19 +8,30 @@
 </head>
 <body>
     <nav class="navbar">
-         <div class="nav-links">
-        <a href="search.html" class="search-icon">🔍</a> 
+    <div class="nav-links left-links">
     </div>
-        <div class="logo">Last.fm</div>
-        <div class="nav-links">
-            <a href="#" class="nav-link">Home</a>
-            <a href="#" class="nav-link">Live</a>
-            <a href="#" class="nav-link">Music</a>
-            <a href="#" class="nav-link">Charts</a>
-            <a href="#" class="nav-link">Events</a>
-            <a href="#" class="nav-link">Features</a>
-        </div>
-    </nav>
+    
+    <div class="logo">Last.fm</div>
+    
+    <div class="nav-links right-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Live</a>
+        <a href="#" class="nav-link">Music</a>
+        <a href="#" class="nav-link">Charts</a>
+        <a href="#" class="nav-link">Events</a>
+        
+        <form id="searchForm" action="search.html" method="GET">
+        <input type="text" 
+              id="searchInput" 
+              name="q" 
+              placeholder="Search artists, tracks..."
+              aria-label="Search for artists, tracks or albums">
+        <button class="search-toggle-icon" type="submit" aria-label="Search">
+          <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search" width="16" height="16">
+        </button>
+      </form>
+    </div>
+</nav>
     
     <div class="content">
         <h1 class="content-title">Music</h1>
