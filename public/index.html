@@ -1,37 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="nav-links left-links">
+    </div>
+    
+    <div class="logo">Last.fm</div>
+    
+    <div class="nav-links right-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Live</a>
+        <a href="#" class="nav-link">Music</a>
+        <a href="#" class="nav-link">Charts</a>
+        <a href="#" class="nav-link">Events</a>
+        
+        <form id="searchForm" action="search.html" method="GET">
+        <input type="text" 
+              id="searchInput" 
+              name="q" 
+              placeholder="Search artists, tracks..."
+              aria-label="Search for artists, tracks or albums">
+        <button class="search-toggle-icon" type="submit" aria-label="Search">
+          <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search" width="16" height="16">
+        </button>
+      </form>
+    </div>
+</nav>
+    
+    <div class="content">
+        <h1 class="content-title">Music</h1>
+        
+        <div class="section-header">
+            <h2 class="section-title">Hot right now</h2>
+            <div class="section-line"></div>
+        </div>
+        
+        <div class="artists-container">
+            <div class="artist-circle">
+                <div class="artist-circle-image">K</div>
+                <div class="artist-name">Kanye West</div>
+                <div class="artist-desc">Key-hop map lighting</div>
+            </div>
+            
+            <div class="artist-circle">
+                <div class="artist-circle-image">J</div>
+                <div class="artist-name">Judge</div>
+                <div class="artist-desc">Judge Key-hop location</div>
+            </div>
+            
+            <div class="artist-circle">
+                <div class="artist-circle-image">W</div>
+                <div class="artist-name">The Wehnd</div>
+                <div class="artist-desc">The alternative candidate</div>
+            </div>
+            
+            <div class="artist-circle">
+                <div class="artist-circle-image">T</div>
+                <div class="artist-name">Tyler, the Custer</div>
+                <div class="artist-desc">Key-hop map design</div>
+            </div>
+            
+            <div class="artist-circle">
+                <div class="artist-circle-image">D</div>
+                <div class="artist-name">Drake</div>
+                <div class="artist-desc">Key-hop map map</div>
+            </div>
+            
+            <div class="artist-circle">
+                <div class="artist-circle-image">S</div>
+                <div class="artist-name">Steve Lacy</div>
+                <div class="artist-desc">Travel pan Jazz smartphone</div>
+            </div>
+            
+            <div class="artist-circle">
+                <div class="artist-circle-image">P</div>
+                <div class="artist-name">Playbed Card</div>
+                <div class="artist-desc">Image Hip-hop colour map</div>
+            </div>
+            
+            <div class="artist-circle">
+                <div class="artist-circle-image">K</div>
+                <div class="artist-name">Knodrick Lamar</div>
+                <div class="artist-desc">High-hop map lighting</div>
+            </div>
+            
+            <div class="artist-circle">
+                <div class="artist-circle-image">J</div>
+                <div class="artist-name">Joji</div>
+                <div class="artist-desc">Delir with Hip-hop</div>
+            </div>
+            
+            <div class="artist-circle">
+                <div class="artist-circle-image">L</div>
+                <div class="artist-name">Lana Duffley</div>
+                <div class="artist-desc">Multi-pop Stream vocalists</div>
+            </div>
+            
+            <div class="artist-circle">
+                <div class="artist-circle-image">H</div>
+                <div class="artist-name">Hitaki</div>
+                <div class="artist-desc">Multi-cash studio multi-pop</div>
+            </div>
+            
+            <div class="artist-circle">
+                <div class="artist-circle-image">F</div>
+                <div class="artist-name">Frank Oosan</div>
+                <div class="artist-desc">mix road hip-hop</div>
+            </div>
+        </div>
+        
+       <div class="section-header">
+            <h2 class="section-title">Popular tracks</h2>
+            <div class="section-line"></div>
+        </div>
+        
+        <div class="tracks-container">
+            <div class="track-column">
+                <div class="track">
+                   <div class="album-cover">COVER</div> 
+                    <div class="track-info">
+                        <div class="track-name">SEXY NORTH (fast. 8th of BT5)</div>
+                        <div class="track-artist">Bathing Tiger</div>
+                        <div class="track-genre">Hair Hip-hop dimension</div>
+                    </div>
+                </div>
+                
+                <div class="track">
+                   <div class="album-cover">COVER</div> 
+                    <div class="track-info">
+                        <div class="track-name">HOBE</div>
+                        <div class="track-artist">Judge</div>
+                        <div class="track-genre">pools Hip-hop map</div>
+                    </div>
+                </div>
+                
+                <div class="track">
+                   <div class="album-cover">COVER</div> 
+                    <div class="track-info">
+                        <div class="track-name">Yet to Come</div>
+                        <div class="track-artist">BT5</div>
+                        <div class="track-genre">3-pops Skin Season</div>
+                    </div>
+                </div>
+                
+                <div class="track">
+                   <div class="album-cover">COVER</div> 
+                    <div class="track-info">
+                        <div class="track-name">Bad Decisions (with BT5 & Stoop Days)</div>
+                        <div class="track-artist">Benny Blanco</div>
+                        <div class="track-genre">Mix Mountain Jump Group</div>
+                    </div>
+                </div>
+                
+                <div class="track">
+                   <div class="album-cover">COVER</div> 
+                    <div class="track-info">
+                        <div class="track-name">Left and Right (fast. Jung Kook of BT5)</div>
+                        <div class="track-artist">Charts Puth</div>
+                        <div class="track-genre">BT5: JungKook: 2222</div>
+                    </div>
+                </div>
+                
+                <div class="track">
+                   <div class="album-cover">COVER</div> 
+                    <div class="track-info">
+                        <div class="track-name">Pink Venom</div>
+                        <div class="track-artist">BLACKPINK</div>
+                        <div class="track-genre">3-pops Hip-hop</div>
+                    </div>
+                </div>
+            </div>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+            <div class="track-column">
+                <div class="track">
+                   <div class="album-cover">COVER</div> 
+                    <div class="track-info">
+                        <div class="track-name">After LIKE</div>
+                        <div class="track-artist">IVE</div>
+                        <div class="track-genre">3-pops Glass Kitty</div>
+                    </div>
+                </div>
+                
+                <div class="track">
+                   <div class="album-cover">COVER</div> 
+                    <div class="track-info">
+                        <div class="track-name">Talk that Talk</div>
+                        <div class="track-artist">TWICE</div>
+                        <div class="track-genre">3-pops Toneless Tango</div>
+                    </div>
+                </div>
+                
+                <div class="track">
+                   <div class="album-cover">COVER</div> 
+                    <div class="track-info">
+                        <div class="track-name">Vips Roy</div>
+                        <div class="track-artist">NewJasons</div>
+                        <div class="track-genre">3-pops Vogue Kitty</div>
+                    </div>
+                </div>
+                
+                <div class="track">
+                   <div class="album-cover">COVER</div>
+                    <div class="track-info">
+                        <div class="track-name">Bad Nakki</div>
+                        <div class="track-artist">Stores Lucy</div>
+                        <div class="track-genre">White around: backroom page</div>
+                    </div>
+                </div>
+                
+                <div class="track">
+                   <div class="album-cover">COVER</div>
+                    <div class="track-info">
+                        <div class="track-name">Talk</div>
+                        <div class="track-artist">Yoak</div>
+                        <div class="track-genre">Train Factory map</div>
+                    </div>
+                </div>
+                
+                <div class="track">
+                   <div class="album-cover">COVER</div> 
+                    <div class="track-info">
+                        <div class="track-name">Stay Alive (Prod. SUDA of BT5)</div>
+                        <div class="track-artist">Jung Kook</div>
+                        <div class="track-genre">JungKook: box out</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="track-column">
+                <div class="track">
+                   <div class="album-cover">COVER</div> 
+                    <div class="track-info">
+                        <div class="track-name">Romantic Monicide</div>
+                        <div class="track-artist">cloud</div>
+                        <div class="track-genre">Home</div>
+                    </div>
+                </div>
+                
+                <div class="track">
+                   <div class="album-cover">COVER</div> 
+                    <div class="track-info">
+                        <div class="track-name">Super Freaky Girl</div>
+                        <div class="track-artist">Rocki Hfouj</div>
+                        <div class="track-genre">Top-hop map Hip hop</div>
+                    </div>
+                </div>
+                
+                <div class="track">
+                   <div class="album-cover">COVER</div> 
+                    <div class="track-info">
+                        <div class="track-name">With You</div>
+                        <div class="track-artist">Jimmy</div>
+                        <div class="track-genre">Jimmy-mix Kids</div>
+                    </div>
+                </div>
+                
+                <div class="track">
+                   <div class="album-cover">COVER</div> 
+                    <div class="track-info">
+                        <div class="track-name">That That (prod. & feat. SUDA of BT5)</div>
+                        <div class="track-artist">Pray</div>
+                        <div class="track-genre">Deep - prod songs - best songs</div>
+                    </div>
+                </div>
+                
+                <div class="track">
+                   <div class="album-cover">COVER</div> 
+                    <div class="track-info">
+                        <div class="track-name">Olimpas of Us</div>
+                        <div class="track-artist">Joji</div>
+                        <div class="track-genre">Install - pop - piano</div>
+                    </div>
+                </div>
+                
+                <div class="track">
+                   <div class="album-cover">COVER</div> 
+                    <div class="track-info">
+                        <div class="track-name">YONRS</div>
+                        <div class="track-artist">Jim</div>
+                        <div class="track-genre">smt - safada - tango</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    </div>
+        <footer class="footer">
+        <div class="footer-content-wrapper">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3 class="footer-column-title">COMPANY</h3>
+                <ul class="footer-list">
+                    <li class="footer-list-item"><a href="#" class="footer-link">About Last.fm</a></li>
+                    <li class="footer-list-item"><a href="#" class="footer-link">Contact Us</a></li>
+                    <li class="footer-list-item"><a href="#" class="footer-link">Jobs</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3 class="footer-column-title">HELP</h3>
+                <ul class="footer-list">
+                    <li class="footer-list-item"><a href="#" class="footer-link">Track by Music</a></li>
+                    <li class="footer-list-item"><a href="#" class="footer-link">Community Support</a></li>
+                    <li class="footer-list-item"><a href="#" class="footer-link">Community Guidelines</a></li>
+                    <li class="footer-list-item"><a href="#" class="footer-link">Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-column-title">GOODIES</h3>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+                <ul class="footer-list">
+                    <li class="footer-list-item"><a href="#" class="footer-link">Download Scrobbler</a></li>
+                    <li class="footer-list-item"><a href="#" class="footer-link">Developer API</a></li>
+                    <li class="footer-list-item"><a href="#" class="footer-link">Free Music Downloads</a></li>
+                    <li class="footer-list-item"><a href="#" class="footer-link">Merchandise</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3 class="footer-column-title">ACCOUNT</h3>
+                <ul class="footer-list">
+                    <li class="footer-list-item"><a href="#" class="footer-link">Sign Up</a></li>
+                    <li class="footer-list-item"><a href="#" class="footer-link">Log In</a></li>
+                    <li class="footer-list-item"><a href="#" class="footer-link">Subscribe</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-column-title">FOLLOW ME</h3>
+                <ul class="footer-list">
+                    <li class="footer-list-item"><a href="#" class="footer-link">Facebook</a></li>
+                    <li class="footer-list-item"><a href="#" class="footer-link">Twitter</a></li>
+                    <li class="footer-list-item"><a href="#" class="footer-link">Instagram</a></li>
+                    <li class="footer-list-item"><a href="#" class="footer-link">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div>
+                <div class="language-selector">
+                    <span class="language-option">English</span>
+                    <span class="language-option">Deutsch</span>
+                    <span class="language-option">English</span>
+                    <span class="language-option">Francois</span>
+                    <span class="language-option">Italiano</span>
+                    <span class="language-option">E-Mail</span>
+                    <span class="language-option">Polo!</span>
+                    <span class="language-option">Portugalia</span>
+                    <span class="language-option">Pocosoli</span>
+                    <span class="language-option">Srembia</span>
+                    <span class="language-option">Torica</span>
+                    <span class="language-option">IRM+RX</span>
+                </div>
+                <div class="time-zone">Time zone: Europe/Thorizon</div>
+            </div>
+
+            <div class="copyright">
+                CBS Interactive © 2025 Last.fm Ltd. All rights reserved 
+                <a href="#" class="copyright-link">Terms of Use</a> | 
+                <a href="#" class="copyright-link">Privacy Policy</a> | 
+                <a href="#" class="copyright-link">Legal Policies</a> | 
+                <a href="#" class="copyright-link">Cookie Details</a> | 
+                <a href="#" class="copyright-link">Jobs at Paramount</a> | 
+                <a href="#" class="copyright-link">Last.fm Music</a> | 
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script src="js/api.js"></script>
   </body>
 </html>
